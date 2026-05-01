@@ -1,0 +1,10 @@
+environment           = "staging"
+region                = "us-east-1"
+vpc_cidr              = "10.1.0.0/16"
+public_subnet_cidrs   = ["10.1.1.0/24", "10.1.2.0/24"]
+private_subnet_cidrs  = ["10.1.10.0/24", "10.1.11.0/24"]
+isolated_subnet_cidrs = ["10.1.20.0/24", "10.1.21.0/24"]
+availability_zones    = ["us-east-1a", "us-east-1b"]
+container_image       = "amazon/aws-node-termination-handler:latest"
+worker_cpu            = 512
+worker_memory         = 1024
